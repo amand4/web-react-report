@@ -1,0 +1,17 @@
+#dashboard-main {
+  background-color: #ffffff!important;
+
+}
+
+.line {
+  
+  color: #3EC5CC!important;
+}
+
+.btn-add-image {
+  width: 400px;
+  border-radius: 4px;
+  background-color: #5E72E4!important;
+  color: #ffffff!important;
+  margin-bottom: 25px!important;
+}

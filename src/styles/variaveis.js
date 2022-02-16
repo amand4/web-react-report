@@ -1,0 +1,10 @@
+export const AMARELO = '#F2EB88';
+export const BRANCO = '#FFFFFF';
+export const AZUL_10 = '#568FA6';
+export const AZUL_20 = '#568FA68F';
+export const AZUL_30 = '#70AFE4';
+export const AZUL_40 = '#5E72E4';
+export const CIANO = '#3EC5CC';
+export const CINZA = '#C4C4C4';
+export const VERMELHO = '#DC3545';
+export const VERDE = '#2DCE89';

@@ -1,0 +1,145 @@
+.action-group {
+  margin-left: 15px;
+ }
+ 
+ 
+ .edit {
+     width: 42px;
+     height: 38px;
+     background: #FFFFFF;
+     border: 1px solid #70AFE4;
+     box-sizing: border-box;
+     border-radius: 4px;
+     margin-right: 15px;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+ 
+ .edit:hover {
+     background: #70AFE4;
+     border-color: #70AFE4;
+ }
+ .edit:hover svg {
+     fill: #FFFFFF;
+ }
+ .download {
+     width: 42px;
+     height: 38px;
+     background: #FFFFFF;
+     border: 1px solid #C4C4C4;
+     box-sizing: border-box;
+     border-radius: 4px;
+     margin-right: 15px;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+ .download:hover {
+     background: #C4C4C4;
+     border-color: #C4C4C4;
+ }
+ .download:hover svg {
+     fill: #FFFFFF;
+ }
+ .delete {
+     width: 42px;
+     height: 38px;
+     background: #FFFFFF;
+     border: 1px solid #DC3545;
+     box-sizing: border-box;
+     border-radius: 4px;
+     margin-right: 15px;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+ .delete:hover {
+     background: #DC3545;
+     border-color: #DC3545;
+ }
+ .delete:hover svg {
+     fill: #FFFFFF;
+ }
+ 
+ 
+ 
+ .round {
+     
+     width: 100%;
+     border-radius: 25px;
+     border: none;
+     background: #F8F8F8;
+     height: 45px;
+     padding: 5px 1px 5px 1px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 1;
+ }
+ 
+ .corner {
+     position: absolute;
+     
+     right: 0;
+     width: 70%;
+     height: 45px;
+     z-index: 90;
+     border-radius: 25px;
+     border: none;
+     background: rgba(86, 143, 166, 0.56) url('../../assets/search.svg') no-repeat center ;
+ }
+ 
+ .search {
+    
+     position: relative;
+     width: 50%;
+     height: 45px;
+ }
+ .dash-container {
+     
+     width: 100%;
+     height: 100%;
+   
+     background-color: #FFFFFF;
+ }
+ 
+ .styled-table {
+ 
+     border-collapse: collapse;
+     margin: 25px 0;
+     font-size: 15px;
+     min-width: 25%;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+     
+     
+ }
+ .styled-table thead tr {
+     background: #568FA6;;
+     color: #ffffff;
+     text-align: center;
+     
+ }
+ .styled-table th,
+ .styled-table td {
+     padding: 12px 15px;
+     text-align: center;
+ }
+ .styled-table tbody tr {
+     border-bottom: 1px solid #dddddd;
+ }
+ 
+ .styled-table tbody tr:nth-of-type(even) {
+     background-color: #f3f3f3;
+ }
+ 
+ .styled-table tbody tr:last-of-type {
+     border: 1px solid #568FA6;
+     
+ }
+ .styled-table tbody tr.active-row {
+     font-weight: bold;
+     color: #60b8db;
+ }
+ 
+ 
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 95%
+  }
+}
