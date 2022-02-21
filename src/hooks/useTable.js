@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 
-// ...
-
 const useTable = (statements, page, rowsPerPage) => {
   const [tableRange, setTableRange] = useState([]);
   const [slice, setSlice] = useState([]);

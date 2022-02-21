@@ -6,7 +6,6 @@ export default function Header() {
   return (
     <div className="header-bar">
       <a href="./dashboard/"><img src={logo} id="logo-header" alt="Logo" /></a>
-
     </div>
   );
 }

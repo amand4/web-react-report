@@ -1,23 +1,13 @@
-import React, { useCallback, useState, useEffect } from "react";
+import React, { useCallback, useState } from "react";
 import { debounce } from "lodash";
-import api from "../../services/api";
 import TableContainer from "../ListaLaudo/components/TableContainer";
 
-const TableWrapper = () => {
+const TableWrapper = ({ list }) => {
   const [search, setsearch] = useState("");
   const [searchData, setsearchData] = useState([]);
-  const [list, setList] = React.useState([]);
-
-  useEffect(() => {
-    async function loadData() {
-      const response = await api.get("/users/4/reports");
-      setList(response.data);
-    }
-    loadData();
-  }, []);
 
   const changeSearchData = (text) => {
-    setsearchData(list.filter((item) => item.name.includes(text)));
+    setsearchData(list.filter((item) => item.rep.includes(text)));
   };
 
   const debounceLoadData = useCallback(debounce(changeSearchData, 500), []);
@@ -35,7 +25,7 @@ const TableWrapper = () => {
           name="search"
           className="round"
           onChange={(e) => handleSearch(e.target.value)}
-          placeholder="      Digite o número da REP"
+          placeholder="Digite o número da REP"
         />
         <input type="submit" className="corner" value="" />
       </div>

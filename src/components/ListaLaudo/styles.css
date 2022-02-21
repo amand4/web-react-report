@@ -71,6 +71,7 @@
   top: 0;
   left: 0;
   z-index: 1;
+  padding: 10px;
 }
 
 .corner {
@@ -88,7 +89,7 @@
 
 .search {
   position: relative;
-  width: 800px;
+  width: 75%;
   height: 45px;
 }
 .dash-container {
