@@ -2,7 +2,7 @@
 
 ## Tudo sobre o projeto:
 
-- Notion Geral: [https://gold-street-24d.notion.site/App-Vehicle-report-generator-71a1f17de9d642b3981cea8d7f7ee285](https://gold-street-24d.notion.site/App-Vehicle-report-generator-71a1f17de9d642b3981cea8d7f7ee285)
+- Notion Geral: [https://www.notion.so/App-Vehicle-report-generator-ff94180d84af415c842e89d29c2784be](https://www.notion.so/App-Vehicle-report-generator-ff94180d84af415c842e89d29c2784be)
 
 - Mapa Mental: [https://www.mindmeister.com/1462695947?t=8NurUuLG0G](https://www.mindmeister.com/1462695947?t=8NurUuLG0G)
 - Banco de dados: [https://drive.google.com/drive/folders/1DvNvgwUGOL2tZMroa-nFpT5nvFA4qKfu?usp=sharing](https://drive.google.com/drive/folders/1DvNvgwUGOL2tZMroa-nFpT5nvFA4qKfu?usp=sharing)
@@ -16,7 +16,7 @@
 ### Clone o repositório
 
 ```bash
-$ git clone[ https://github.com/amand4/mobile-reactnative-report](https://github.com/amand4/web-react-report.git) && cd web-react-report
+$ git clone[ https://github.com/amand4/web-react-report](https://github.com/amand4/web-react-report.git) && cd web-react-report
 ```
 
 ### Instalar Dependências
