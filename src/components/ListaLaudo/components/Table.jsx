@@ -34,7 +34,7 @@ const index = ({ data }) => {
                   </button>
                   <button className="btn-action download">
                     <a
-                      href={`http://localhost:8000/v1/reports/doc/${report.id}`}
+                      href={`http://api.tcc.1hp.racing/v1/reports/doc/${report.id}`}
                     >
                       <IconDownload fill="#C4C4C4" />
                     </a>

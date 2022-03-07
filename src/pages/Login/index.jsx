@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 export default function Login() {
   const [name, setname] = useState("");
   const [password, setPassword] = useState("");
-  let [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   const { signIn } = useAuth();
 
   async function handleSubmit(e) {
