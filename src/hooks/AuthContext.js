@@ -48,7 +48,7 @@ const AuthProvider = ({ children }) => {
     localStorage.removeItem(dataKey);
     localStorage.removeItem(userStorageKey);
 
-    setData();
+    setData({});
   }, []);
 
   return (

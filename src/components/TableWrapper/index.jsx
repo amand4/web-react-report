@@ -2,7 +2,7 @@ import React, { useCallback, useState } from "react";
 import { debounce } from "lodash";
 import TableContainer from "../ListaLaudo/components/TableContainer";
 
-const TableWrapper = ({ list }) => {
+const TableWrapper = ({ list, handleDeleteReport }) => {
   const [search, setsearch] = useState("");
   const [searchData, setsearchData] = useState([]);
 
@@ -19,7 +19,7 @@ const TableWrapper = ({ list }) => {
 
   return (
     <div>
-      <div className="search">
+      {/* <div className="search">
         <input
           type="text"
           name="search"
@@ -28,9 +28,12 @@ const TableWrapper = ({ list }) => {
           placeholder="Digite o número da REP"
         />
         <input type="submit" className="corner" value="" />
-      </div>
+      </div> */}
 
-      <TableContainer data={search ? searchData : list} />
+      <TableContainer
+        data={search ? searchData : list}
+        handleDeleteReport={handleDeleteReport}
+      />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Table from "./Table";
 import { useAuth } from "../../../hooks/AuthContext";
 
-const TableContainer = function ({ data }) {
+const TableContainer = function ({ data, handleDeleteReport }) {
   const { token } = useAuth();
 
   const [current, setcurrent] = useState(1);
@@ -35,7 +35,11 @@ const TableContainer = function ({ data }) {
 
   return (
     <>
-      <Table data={paginatedData} token={token} />
+      <Table
+        data={paginatedData}
+        token={token}
+        handleDeleteReport={handleDeleteReport}
+      />
       <div className="pagination">
         {pageNumbers.map((number) => (
           <span

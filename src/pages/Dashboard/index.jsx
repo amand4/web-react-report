@@ -6,6 +6,8 @@ import ListaLaudo from "../../components/ListaLaudo";
 import "./styles.css";
 
 export default function Dashboard() {
+  // if (!auth) return <Redirect to='/' />
+
   return (
     <div id="dashboard-main">
       <Header />

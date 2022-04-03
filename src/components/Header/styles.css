@@ -1,19 +1,39 @@
-.header-bar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 89px;
-    z-index: 2;
-    background: #568FA6;
+.header-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 89px;
+  z-index: 2;
+  background: #568fa6;
+}
+.header-bar .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 8px;
+}
+#logo-header {
+  width: 52px;
+  height: 52px;
 }
 
-#logo-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin-left: 8px;
-    margin-top: 10px;
-    width: 52px;
-    height: 52px;
+.btn-veiculo-logout {
+  border: 0;
+  border-bottom: 1px solid transparent;
+  background: transparent;
+  width: 40px;
+  text-align: center;
+  color: #fff;
+  padding: 0;
+}
+
+.btn-veiculo-logout .iconLogout {
+  fill: #fff;
+}
+.btn-veiculo-logout:hover {
+  color: #3ec5cc;
+}
+.btn-veiculo-logout:hover .iconLogout {
+  fill: #3ec5cc;
 }

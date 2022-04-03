@@ -8,8 +8,15 @@ import meuslaudos from "../../assets/mlaudo.svg";
 import conta from "../../assets/conta.svg";
 import logout from "../../assets/logout.svg";
 import "./styles.css";
+import { ReactComponent as IconLogout } from "../../assets/logout.svg";
+import { useAuth } from "../../hooks//AuthContext";
 
 export default function SideMenu() {
+  const { signOut } = useAuth();
+
+  async function handleSignOut() {
+    await signOut();
+  }
   return (
     <>
       <SideNav id="sdb" onSelect={(selected) => {}}>
@@ -25,7 +32,7 @@ export default function SideMenu() {
             </NavIcon>
             <NavText>Home</NavText>
           </NavItem>
-          <NavItem eventKey="novo-laudo">
+          {/* <NavItem eventKey="novo-laudo">
             <NavIcon>
               <a href="./form">
                 {" "}
@@ -49,13 +56,12 @@ export default function SideMenu() {
               </a>
             </NavIcon>
             <NavText>Conta</NavText>
-          </NavItem>
+          </NavItem> */}
           <NavItem eventKey="logout">
-            <NavIcon>
-              <a href="./">
-                {" "}
-                <img src={logout} alt="logout-ico"></img>
-              </a>
+            <NavIcon onClick={handleSignOut}>
+              <button className="btn-veiculo-logout" onClick={handleSignOut}>
+                <IconLogout className="iconLogout"></IconLogout>
+              </button>
             </NavIcon>
             <NavText>Sair</NavText>
           </NavItem>
