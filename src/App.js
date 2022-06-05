@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="container-main">
       <div className="content-home">
-        <Routes />
         <ToastContainer
           position="top-right"
           autoClose={5000}
@@ -21,6 +20,7 @@ function App() {
           draggable
           pauseOnHover
         />
+        <Routes />
       </div>
     </div>
   );

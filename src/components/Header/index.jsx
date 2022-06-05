@@ -12,15 +12,15 @@ export default function Header() {
   }
   return (
     <div className="header-bar">
-      <div className="container">
-        <a href="./dashboard/">
-          <img src={logo} id="logo-header" alt="Logo" />
-        </a>
-        <button className="btn-veiculo-logout" onClick={handleSignOut}>
-          <IconLogout className="iconLogout"></IconLogout>
-          sair
-        </button>
-      </div>
+      <div className="content">
+      <a href="./dashboard/">
+        <img src={logo} id="logo-header" alt="Logo" />
+      </a>
+      <button className="btn-veiculo-logout" onClick={handleSignOut}>
+        <IconLogout className="iconLogout"></IconLogout>
+        sair
+      </button>
+    </div>
     </div>
   );
 }

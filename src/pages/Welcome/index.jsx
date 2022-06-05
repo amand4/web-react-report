@@ -4,7 +4,7 @@ import "./styles.css";
 import logo from "../../assets/Logo.svg";
 import { useHistory } from "react-router-dom";
 
-export default function Hero() {
+export default function Welcome() {
   const history = useHistory();
 
   function handleClick() {

@@ -26,22 +26,29 @@ const AuthProvider = ({ children }) => {
   });
 
   const signIn = useCallback(async ({ name, password }) => {
-    const response = await api.post("/login", {
-      name,
-      password,
-    });
+    try {
+      const response = await api.post("/login", {
+        name,
+        password,
+      });
 
-    const { token, user } = response.data;
+      if (response.data.user) {
+        const { token, user } = response.data;
 
-    const userLogado = {
-      name: user.name,
-      id: user.id,
-    };
+        api.defaults.headers[
+          "Authorization"
+        ] = `Bearer ${response.data?.token}`;
 
-    localStorage.setItem(dataKey, token);
-    localStorage.setItem(userStorageKey, JSON.stringify(userLogado));
+        localStorage.setItem(dataKey, token);
+        localStorage.setItem(userStorageKey, JSON.stringify(user));
 
-    setData({ token: token, user: userLogado });
+        setData({ token: token, user: user });
+      }
+    } catch (error) {
+      throw new Error(
+        "Usário ou senha inválida! Tente novamente com outras credênciais"
+      );
+    }
   }, []);
 
   const signOut = useCallback(() => {

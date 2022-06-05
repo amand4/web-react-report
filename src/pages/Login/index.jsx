@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../../assets/Logo.svg";
 import "./styles.css";
 import { useAuth } from "../../hooks/AuthContext";
@@ -7,19 +7,15 @@ import { toast } from "react-toastify";
 export default function Login() {
   const [name, setname] = useState("");
   const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(true);
   const { signIn } = useAuth();
 
   async function handleSubmit(e) {
     e.preventDefault();
-    setLoading(true);
-    signIn({ name, password })
+    await signIn({ name, password })
       .then((response) => {
-        setLoading(false);
         toast.success("Logado com sucesso");
       })
       .catch((err) => {
-        setLoading(false);
         toast.error(
           "Usário ou senha inválida! Tente novamente com outras credênciais"
         );
@@ -28,6 +24,7 @@ export default function Login() {
   if (signIn) {
     localStorage.clear();
   }
+
   return (
     <div className="container-login text-center ">
       <img src={logo} id="logo-login" alt="Logo" />
@@ -59,11 +56,7 @@ export default function Login() {
           </label>
           <div>
             {" "}
-            <button
-              className="btn btn-lg"
-              onClick={() => setLoading(!loading)}
-              type="submit"
-            >
+            <button className="btn btn-lg" type="submit">
               ENTRAR
             </button>
           </div>

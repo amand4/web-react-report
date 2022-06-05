@@ -1,19 +1,17 @@
 import React from "react";
 import SideMenu from "../../components/SideNav";
 import Header from "../../components/Header";
-import SeletorVeiculo from "../../components/SeletorVeiculo";
-import ListaLaudo from "../../components/ListaLaudo";
+import VehicleCard from "../../components/VehicleCard";
+import ReportList from "../../components/ReportList";
 import "./styles.css";
 
 export default function Dashboard() {
-  // if (!auth) return <Redirect to='/' />
-
   return (
     <div id="dashboard-main">
       <Header />
       <SideMenu />
-      <SeletorVeiculo />
-      <ListaLaudo />
+      <VehicleCard />
+      <ReportList />
     </div>
   );
 }

@@ -32,6 +32,7 @@
     "react-step-builder": "^2.0.11",
     "react-text-mask": "^5.4.3",
     "react-toastify": "^8.2.0",
+    "sweetalert2": "^11.4.17",
     "web-vitals": "^1.0.1",
     "yup": "^0.32.11"
   },

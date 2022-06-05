@@ -7,11 +7,12 @@
   z-index: 2;
   background: #568fa6;
 }
-.header-bar .container {
+.header-bar .content {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 10px 8px;
+  padding: 8px 20px;
 }
 #logo-header {
   width: 52px;

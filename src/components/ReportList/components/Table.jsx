@@ -7,9 +7,9 @@ import constants from "../../../config/constants";
 import api from "../../../services/api";
 import { useAuth } from "../../../hooks/AuthContext";
 
-const index = ({ data, handleDeleteReport }) => {
+const Table = ({ data, handleDeleteReport }) => {
   const headers = ["", "Rep", "Oficio", "Cidade", "Orgão Solicitante", "Ação"];
-
+  
   return (
     <div>
       <table className="styled-table">
@@ -47,22 +47,19 @@ const index = ({ data, handleDeleteReport }) => {
 
                 <td>
                   <div className="action-group">
-                    {/* <button className="btn-action edit">
-                    <IconEdit fill="#70AFE4" />
-                  </button> */}
                     <button className="btn-action download">
                       <a
-                        href={`http://api.tcc.1hp.racing/v1/reports/doc/${report.id}`}
+                        href={`http://localhost:8000/v1/reports/doc/${report.id}`}
                       >
                         <IconDownload fill="#C4C4C4" />
                       </a>
                     </button>
-                    {/* <button
+                    <button
                       className="btn-action delete"
                       onClick={() => handleDeleteReport(report.id)}
                     >
                       <IconDelete fill="#DC3545" />
-                    </button> */}
+                    </button>
                   </div>
                 </td>
               </tr>
@@ -74,4 +71,4 @@ const index = ({ data, handleDeleteReport }) => {
   );
 };
 
-export default index;
+export default Table;

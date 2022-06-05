@@ -16,9 +16,6 @@ import './styles.css';
 
 
 export default function Form(props) {
- 
-
- console.log(props)
 
   return (
 
@@ -35,9 +32,6 @@ export default function Form(props) {
         <Step component={Concluir} />
         <Step component={Final} />
       </Steps>
-
-
-
 
     </div>
 

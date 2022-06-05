@@ -1,5 +1,12 @@
 #dashboard-main {
   margin: auto;
-
+  padding: 15px;
   z-index: 1;
+  padding-left: 125px;
+}
+
+@media only screen and (max-width: 768px) {
+  #dashboard-main {
+    padding-left: 40px;
+  }
 }

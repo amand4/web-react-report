@@ -94,8 +94,6 @@
 .dash-container {
   width: 100%;
   height: 100%;
-  margin-left: 240px;
-
   background-color: #ffffff;
 }
 
@@ -155,12 +153,10 @@
     width: 80%;
     height: 45px;
   }
-  .dash-container {
-    margin-left: 45px;
-  }
+
   .styled-table {
     font-size: 9px;
-    margin-left: -25px;
+    /* margin-left: -25px; */
   }
 
   .form-login {

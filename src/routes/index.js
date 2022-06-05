@@ -1,8 +1,8 @@
 import React from "react";
-import { Switch, HashRouter, BrowserRouter } from "react-router-dom";
+import { Switch, BrowserRouter } from "react-router-dom";
 import Dashboard from "../pages/Dashboard";
 import Login from "../pages/Login";
-import Hero from "../pages/Hero";
+import Welcome from "../pages/Welcome";
 import New from "../pages/New";
 import Form from "../pages/Form";
 
@@ -12,9 +12,9 @@ const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" exact component={Hero} />
+        <Route exact path="/" component={Welcome} />
         <Route path="/login" exact component={Login} />
-        <Route path="/dashboard" component={Dashboard} isPrivate />
+        <Route path="/dashboard" exact component={Dashboard} isPrivate />
         <Route path="/new" component={New} isPrivate />
         <Route path="/form" component={Form} isPrivate />
       </Switch>

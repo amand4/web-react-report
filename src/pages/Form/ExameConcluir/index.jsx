@@ -15,7 +15,6 @@ export default function ExameConcluir(props) {
     () => (thumbnail ? URL.createObjectURL(thumbnail) : null),
     [thumbnail],
   );
-  console.log(props.exame);
 
   return (
 
