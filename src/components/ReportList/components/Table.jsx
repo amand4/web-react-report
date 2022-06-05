@@ -9,7 +9,7 @@ import { useAuth } from "../../../hooks/AuthContext";
 
 const Table = ({ data, handleDeleteReport }) => {
   const headers = ["", "Rep", "Oficio", "Cidade", "Orgão Solicitante", "Ação"];
-  
+
   return (
     <div>
       <table className="styled-table">
@@ -49,7 +49,7 @@ const Table = ({ data, handleDeleteReport }) => {
                   <div className="action-group">
                     <button className="btn-action download">
                       <a
-                        href={`http://localhost:8000/v1/reports/doc/${report.id}`}
+                        href={`http://api.tcc.1hp.racing/v1/reports/doc/${report.id}`}
                       >
                         <IconDownload fill="#C4C4C4" />
                       </a>
