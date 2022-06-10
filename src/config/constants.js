@@ -1,22 +1,32 @@
 export const requestingDepartamentsOptions = [
-  { value: "Selecione um Órgão Solicitante", label: "Selecione um tipo" },
   {
-    value: "14.ª SUBDIVISÃO POLICIAL DE GUARAPUAVA",
-    label: "14.ª SUBDIVISÃO POLICIAL DE GUARAPUAVA",
+    value: "Selecione um Órgão Solicitante",
+    label: "Selecione um Órgão Solicitante",
+  },
+
+  {
+    value: "14.ª SUB. POLICIAL DE GUARAPUAVA",
+    label: "14.ª SUB. POLICIAL DE GUARAPUAVA",
   },
   {
-    value: "45.ª DELEGACIA REGIONAL DE POLÍCIA DE PITANGA",
-    label: "45.ª DELEGACIA REGIONAL DE POLÍCIA DE PITANGA",
+    value: "45.ª DELEGACIA DE POLÍCIA DE PITANGA",
+    label: "45.ª DELEGACIA DE POLÍCIA DE PITANGA",
   },
-  { value: "2ª SDP - 8ª AISP", label: "2ª SDP - 8ª AISP" },
-  { value: "Fórum", label: "Fórum" },
+  {
+    value: "2ª SDP - 8ª AISP",
+    label: "2ª SDP - 8ª AISP",
+  },
+  {
+    value: "Fórum",
+    label: "Fórum",
+  },
   {
     value: "DELEGACIA DE POLÍCIA DE TURVO",
     label: "DELEGACIA DE POLÍCIA DE TURVO",
   },
   {
-    value: "44.ª DELEGACIA REGIONAL DE POLÍCIA DE PALMITAL",
-    label: "44.ª DELEGACIA REGIONAL DE POLÍCIA DE PALMITAL",
+    value: "44.ª DELEGACIA DE POLÍCIA DE PALMITAL",
+    label: "44.ª DELEGACIA DE POLÍCIA DE PALMITAL",
   },
   {
     value: "DELEGACIA DE POLÍCIA DE NOVA TEBAS",
@@ -38,7 +48,6 @@ export const citiesOptions = [
     label: "Boa Ventura de São Roque",
   },
   { value: "Curitiba", label: "Curitiba" },
-  { value: "Turvo", label: "Turvo" },
   { value: "Cascavel", label: "Cascavel" },
   { value: "Umuarama", label: "Umuarama" },
   { value: "Foz do Iguaçu", label: "Foz do Iguaçu" },

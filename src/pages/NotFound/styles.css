@@ -1,0 +1,18 @@
+.container-404 img {
+  display: block;
+  width: 100%;
+  max-width: 761px;
+}
+
+.btn-404 {
+  background: #ffffff !important;
+  border: 2px solid #3ec5cc !important;
+  color: #3ec5cc !important;
+}
+.container-404 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+}

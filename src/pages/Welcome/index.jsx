@@ -12,16 +12,13 @@ export default function Welcome() {
   }
 
   return (
-    <div className="container hero text-center">
-      <img src={logo} id="logo" alt="Logo" />
+    <div className=" hero text-center">
       <div className="content">
+        <img src={logo} id="logo" alt="Logo" />
+
         <h1 className="title-hero">Exame de Identificação Veicular</h1>
         <p className="subtitle-hero">
-          Para iniciar o Exame de Identificação
-          <br />
-          Veícular crie uma conta ou acesse sua
-          <br />
-          conta ja criada :
+          Para acessar os Exames de Identificação Veículares acesse sua conta:
         </p>
         <Button className="btnyel" type="submit" onClick={handleClick}>
           Entrar

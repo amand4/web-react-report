@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-  background-color: #568FA6;
+  background-color: #568fa6;
 }
 
 .hero {
-  background-color: #568FA6;
+  background-color: #568fa6;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
-
 
 .btnyel {
   margin: auto;
@@ -21,11 +22,11 @@ body {
   height: 40px;
   font-size: 16px;
   font-weight: bold;
-  background-color: #F2EB88  ;
-  color: #BFAF5E  ;
+  background-color: #f2eb88;
+  color: #bfaf5e;
   cursor: pointer;
 }
 
-.btnyel:hover{
+.btnyel:hover {
   background: #f3ea67;
 }

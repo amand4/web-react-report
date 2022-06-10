@@ -17,9 +17,9 @@ button {
 
 .content-home {
   width: 100%;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   border-radius: 4px;
-  padding: 30px;
+  /* padding: 30px; */
   height: 100vh;
   background-color: white;
 }

@@ -22,7 +22,7 @@ export default function SideMenu() {
         <SideNav.Nav defaultSelected="home">
           <NavItem eventKey="home">
             <NavIcon>
-              <a href="./dashboard">
+              <a href="/dashboard">
                 <img src={home} alt="home-ico"></img>
               </a>
             </NavIcon>

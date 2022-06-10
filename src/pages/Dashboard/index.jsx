@@ -10,8 +10,8 @@ export default function Dashboard() {
     <div id="dashboard-main">
       <Header />
       <SideMenu />
-      <VehicleCard />
-      <ReportList />
+        <VehicleCard />
+        <ReportList />
     </div>
   );
 }

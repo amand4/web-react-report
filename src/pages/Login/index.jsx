@@ -27,9 +27,9 @@ export default function Login() {
 
   return (
     <div className="container-login text-center ">
-      <img src={logo} id="logo-login" alt="Logo" />
-
       <form onSubmit={handleSubmit}>
+        <img src={logo} id="logo-login" alt="Logo" />
+
         <div className="form-login">
           <label id="password">
             <input
@@ -56,7 +56,7 @@ export default function Login() {
           </label>
           <div>
             {" "}
-            <button className="btn btn-lg" type="submit">
+            <button className="btn btn-lg login" type="submit">
               ENTRAR
             </button>
           </div>
