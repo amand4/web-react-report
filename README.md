@@ -1,11 +1,6 @@
-# APlicação Web - Report Vehile Generator
+## 💻 Sobre
 
-## Tudo sobre o projeto:
-
-- Notion Geral: [https://www.notion.so/App-Vehicle-report-generator-ff94180d84af415c842e89d29c2784be](https://www.notion.so/App-Vehicle-report-generator-ff94180d84af415c842e89d29c2784be)
-
-- Mapa Mental: [https://www.mindmeister.com/1462695947?t=8NurUuLG0G](https://www.mindmeister.com/1462695947?t=8NurUuLG0G)
-- Banco de dados: [https://drive.google.com/drive/folders/1DvNvgwUGOL2tZMroa-nFpT5nvFA4qKfu?usp=sharing](https://drive.google.com/drive/folders/1DvNvgwUGOL2tZMroa-nFpT5nvFA4qKfu?usp=sharing)
+Aplicação Web para gerênciar laudos períciais veiculares.
 
 ## Ambiente e Ferramentas:
 
