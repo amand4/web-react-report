@@ -11,7 +11,7 @@ Aplicação Web para gerênciar laudos períciais veiculares.
 ### Clone o repositório
 
 ```bash
-$ git clone[ https://github.com/amand4/web-react-report](https://github.com/amand4/web-react-report.git) && cd web-react-report
+$ git clone https://github.com/amand4/web-react-report.git && cd web-react-report
 ```
 
 ### Instalar Dependências
